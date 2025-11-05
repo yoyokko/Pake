@@ -48,6 +48,11 @@ on:
         required: false
         type: boolean
         default: false
+      disabled_web_shortcuts:
+        description: "disabled_web_shortcuts"
+        required: false
+        type: boolean
+        default: true
       targets:
         description: "Targets, Linux only, Optional"
         required: false
@@ -125,6 +130,7 @@ jobs:
           HIDE_TITLE_BAR: ${{ inputs.hide_title_bar }}
           FULLSCREEN: ${{ inputs.fullscreen }}
           MULTI_ARCH: ${{ inputs.multi_arch }}
+          DISABLED_WEB_SHORTCUTS: ${{ inputs.disabled_web_shortcuts }}
           TARGETS: ${{ inputs.targets }}
           PKG_CONFIG_PATH: /usr/lib/x86_64-linux-gnu/pkgconfig:/usr/share/pkgconfig
           PKG_CONFIG_ALLOW_SYSTEM_LIBS: 1
