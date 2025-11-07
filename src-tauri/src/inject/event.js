@@ -786,8 +786,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Handle right-click context menu
   document.addEventListener(
-    "contextmenu",
+    "contextmenu--disable",
     function (event) {
+      
       const target = event.target;
 
       // Check for media elements (images/videos)
