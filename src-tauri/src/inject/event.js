@@ -788,7 +788,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener(
     "contextmenu--disable",
     function (event) {
-      
       const target = event.target;
 
       // Check for media elements (images/videos)
